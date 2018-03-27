@@ -328,6 +328,13 @@ public abstract class AbstractEnrollmentService
         return enrollment;
     }
 
+    //TODO: Not sure that this will be used at all at the end as mutual agreement about the implementation changed. If not, then this and all related methods should be removed.
+    @Override
+    public int getDeletedEnrollmentCount( ProgramInstanceQueryParams params )
+    {
+        return programInstanceService.getDeletedProgramInstanceCount( params );
+    }
+
     // -------------------------------------------------------------------------
     // CREATE
     // -------------------------------------------------------------------------

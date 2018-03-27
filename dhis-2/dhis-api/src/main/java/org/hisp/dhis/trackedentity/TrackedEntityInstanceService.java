@@ -116,6 +116,8 @@ public interface TrackedEntityInstanceService
 
     int getTrackedEntityInstanceCount( TrackedEntityInstanceQueryParams params, boolean sync );
 
+    int getDeletedTrackedEntityInstanceCount( TrackedEntityInstanceQueryParams params, boolean sync );
+
     /**
      * Returns a TrackedEntityInstanceQueryParams based on the given input.
      *
